@@ -1,0 +1,729 @@
+# activate venv in django
+# . venv/Scripts/activate
+
+i need to webscrap the google image which is in the path
+url = "https://www.google.com/search?q=pees&sca_esv=d68d7b2bcd73c13f&sca_upv=1&rlz=1C1CHBF_en-GBIN1108IN1107&udm=2&biw=830&bih=649&ei=OxQ1ZtjZOuKRseMP17CwoA4&ved=0ahUKEwiY4__f9vGFAxXiSGwGHVcYDOQQ4dUDCBA&uact=5&oq=car&gs_lp=Egxnd3Mtd2l6LXNlcnAiA2NhcjINEAAYgAQYsQMYQxiKBTIKEAAYgAQYQxiKBTINEAAYgAQYsQMYQxiKBTIKEAAYgAQYQxiKBTINEAAYgAQYsQMYQxiKBTIKEAAYgAQYQxiKBTINEAAYgAQYsQMYQxiKBTIKEAAYgAQYQxiKBTINEAAYgAQYsQMYQxiKBTIIEAAYgAQYsQMyCBAAGIAEGLEDMg0QABiABBixAxhDGIoFSOcGUABYAHABeACQAQCYAQCgAQCqAQC4AQPIAQCYAgGgAgmYAwCIBgGSBwExoAcA&sclient=gws-wiz-serp"
+
+and the image i need to is <div class="H8Rx8c" style="height:180px"><g-img style="max-height:190px;max-width:265px" class="tb08Pd"><img id="dimg_309" src="data:image/jpeg;base64,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" class="YQ4gaf" height="190" style="object-position:center" width="265" alt="71 Pees Pod Images, Stock Photos, 3D ..." data-csiid="18" data-atf="1"></g-img><div class="cC9Rib"></div></div>
+
+only the first element
+
+
+
+
+
+
+
+first res
+
+import os
+import time
+import requests
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
+from PIL import Image
+import io
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
+def get_first_image_from_google(driver, search_query):
+    driver.get(f"https://www.google.com/search?q={search_query}&tbm=isch")
+    try:
+        # Wait for the first image element to be visible
+        first_image = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.CSS_SELECTOR, 'img')))
+        image_url = first_image.get_attribute('src') if first_image.get_attribute('src') and 'http' in first_image.get_attribute('src') else None
+    except:
+        image_url = None
+
+    return image_url
+
+def download_image(download_path, url):
+    try:
+        image_content = requests.get(url).content
+        image_file = io.BytesIO(image_content)
+        image = Image.open(image_file)
+
+        # Save the image with the appropriate file extension
+        file_extension = url.split('.')[-1].split('?')[0]  # Extract file extension from the URL
+        if file_extension.upper() not in ["JPEG", "JPG", "PNG"]:
+            print(f"Skipping image with unsupported format: {url}")
+            return
+
+        file_path = os.path.join(download_path, f"downloaded_image.{file_extension.lower()}")
+
+        with open(file_path, "wb") as f:
+            image.save(f, file_extension.upper())
+
+        print("Success")
+    except Exception as e:
+        print('FAILED -', e)
+
+# Ask the user for the search query
+search_query = input("Enter your Google Images search query: ")
+
+# Create the 'images/' directory if it doesn't exist
+download_path = "C:\\Users\\shaif\\Desktop\\django-fyp-food deman prediction\\images"
+os.makedirs(download_path, exist_ok=True)
+
+# Create a Chrome driver
+options = Options()
+options.add_argument("--start-maximized")
+driver = webdriver.Chrome(options=options)
+
+# Get the first image URL
+image_url = get_first_image_from_google(driver, search_query)
+
+if image_url:
+    # Download the image
+    download_image(download_path, image_url)
+else:
+    print("No image found.")
+
+# Close the driver instance
+driver.quit()
+
+
+
+second res
+
+
+import os
+import time
+import requests
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
+from PIL import Image
+import io
+
+def get_first_image_from_google(driver, search_query):
+    driver.get(f"https://www.google.com/search?q={search_query}&tbm=isch")
+    time.sleep(2)  # Let the page load
+    try:
+        first_image = driver.find_element(By.CSS_SELECTOR, 'img')
+        image_url = first_image.get_attribute('src') if first_image.get_attribute('src') and 'http' in first_image.get_attribute('src') else None
+    except:
+        image_url = None
+
+    return image_url
+
+def download_image(download_path, url):
+    try:
+        image_content = requests.get(url).content
+        image_file = io.BytesIO(image_content)
+        image = Image.open(image_file)
+
+        # Check if the image can be identified and is in a compatible format
+        if image.format not in ["JPEG", "PNG"]:
+            print(f"Skipping image with unsupported format: {url}")
+            return
+
+        file_path = os.path.join(download_path, "downloaded_image.jpg")
+
+        with open(file_path, "wb") as f:
+            image.save(f, "JPEG")
+
+        print("Success")
+        return True
+    except Exception as e:
+        print('FAILED -', e)
+        return False
+
+# Ask the user for the search query
+search_query = input("Enter your Google Images search query: ")
+
+# Create the 'images/' directory if it doesn't exist
+download_path = "C:\\Users\\shaif\\Desktop\\django-fyp-food deman prediction\\images"
+os.makedirs(download_path, exist_ok=True)
+
+# Create a Chrome driver
+options = Options()
+options.add_argument("--start-maximized")
+driver = webdriver.Chrome(options=options)
+
+# Get the first image URL
+image_url = get_first_image_from_google(driver, search_query)
+
+if image_url:
+    # Download the image
+    success = download_image(download_path, image_url)
+    if success:
+        print("Image saved successfully. Exiting program.")
+        driver.quit()  # Close the driver instance
+else:
+    print("No image found. Exiting program.")
+    driver.quit()  # Close the driver instance
+
+
+
+
+this is the code that i can get the src of the img tag
+
+import os
+import time
+import requests
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
+from PIL import Image
+import io
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
+def get_first_image_from_google(driver, search_query):
+    driver.get(f"https://www.google.com/search?q={search_query}&tbm=isch")
+    try:
+        # Wait for the search div to be visible
+        search_div = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.CLASS_NAME, 'eA0Zlc')))
+        print("Search div found:", search_div)
+        # Find all img elements within the search div using XPath
+        img_elements = search_div.find_elements(By.XPATH, './/img[@class="YQ4gaf"]')  # Modified XPath here
+        print("Image elements:", img_elements)
+        # Get the src attribute of the first img element
+        if img_elements:
+            image_element = img_elements[0]
+            print("Image element tag:", image_element.get_attribute('outerHTML'))
+            image_url = image_element.get_attribute('src')
+            if image_url and 'http' in image_url:
+                return image_url
+        # If no img elements are found or src attribute is missing
+        image_url = None
+    except Exception as e:
+        print("Exception occurred:", e)
+        image_url = None
+
+    return image_url
+
+def download_image(download_path, url):
+    try:
+        image_content = requests.get(url).content
+        image_file = io.BytesIO(image_content)
+        image = Image.open(image_file)
+
+        # Save the image with the appropriate file extension
+        file_extension = url.split('.')[-1].split('?')[0]  # Extract file extension from the URL
+        if file_extension.upper() not in ["JPEG", "JPG", "PNG"]:
+            print(f"Skipping image with unsupported format: {url}")
+            return
+
+        file_path = os.path.join(download_path, f"downloaded_image.{file_extension.lower()}")
+
+        with open(file_path, "wb") as f:
+            image.save(f, file_extension.upper())
+
+        print("Success")
+    except Exception as e:
+        print('FAILED -', e)
+
+# Ask the user for the search query
+search_query = input("Enter your Google Images search query: ")
+
+# Create the 'images/' directory if it doesn't exist
+download_path = "C:\\Users\\shaif\\Desktop\\django-fyp-food deman prediction\\images"
+os.makedirs(download_path, exist_ok=True)
+
+# Create a Chrome driver
+options = Options()
+options.add_argument("--start-maximized")
+driver = webdriver.Chrome(options=options)
+
+# Get the first image URL
+image_url = get_first_image_from_google(driver, search_query)
+
+if image_url:
+    print("Image found.")
+    # Download the image
+    download_image(download_path, image_url)
+else:
+    print("No image found.")
+
+# Close the driver instance
+driver.quit()
+
+
+to activte the venv
+source venv/Scripts/activate
+
+
+script 3 before changes
+this code will search and provide the url
+
+import os
+import time
+import requests
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
+from PIL import Image
+import io
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
+def get_first_image_from_google(driver, search_query):
+    driver.get(f"https://www.google.com/search?q={search_query}&tbm=isch")
+    try:
+        # Wait for the search div to be visible
+        search_div = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.CLASS_NAME, 'eA0Zlc')))
+        print("Search div found:", search_div)
+        # Find all img elements within the search div using XPath
+        img_elements = search_div.find_elements(By.XPATH, './/img[@class="YQ4gaf"]')  # Modified XPath here
+        print("Image elements:", img_elements)
+        # Get the src attribute of the first img element
+        if img_elements:
+            image_element = img_elements[0]
+            print("Image element tag:", image_element.get_attribute('outerHTML'))
+            image_url = image_element.get_attribute('src')
+            print("inside first element")
+            print(image_url)
+            if image_url and 'http' in image_url:
+                return image_url
+        # If no img elements are found or src attribute is missing
+        image_url = None
+    except Exception as e:
+        print("Exception occurred:", e)
+        image_url = None
+
+    return image_url
+
+def download_image(download_path, url):
+    try:
+        # Get the image content from the URL
+        image_content = requests.get(url).content
+        
+        # Generate a unique filename based on the current timestamp
+        timestamp = int(time.time())
+        file_name = f"image_{timestamp}.jpg"
+        
+        # Combine the download path and filename
+        file_path = os.path.join(download_path, file_name)
+        
+        # Save the image content to the specified file path
+        with open(file_path, "wb") as f:
+            f.write(image_content)
+
+        # Check if the file was successfully saved
+        if os.path.exists(file_path):
+            print("Image saved successfully:", file_path)
+        else:
+            print("Failed to save image: File does not exist.")
+    except Exception as e:
+        print('Failed to save image:', e)
+        
+# Ask the user for the search query
+search_query = input("Enter your Google Images search query: ")
+
+# Create the 'images/' directory if it doesn't exist
+download_path = "C:\\Users\\shaif\\Desktop\\django-fyp-food deman prediction\\images"
+os.makedirs(download_path, exist_ok=True)
+
+# Create a Chrome driver
+options = Options()
+options.add_argument("--start-maximized")
+driver = webdriver.Chrome(options=options)
+
+# Get the first image URL
+image_url = get_first_image_from_google(driver, search_query)
+
+if image_url:
+    print("Image found. URL:", image_url)
+    # Download the image
+    download_image(download_path, image_url)
+else:
+    print("No image found.")
+
+# Close the driver instance
+driver.quit()
+
+
+
+this code is for downloading the image after send the URL
+
+
+import base64
+
+# Your Data URL
+data_url = ""
+
+# Extract the base64-encoded data
+data_index = data_url.find(',') + 1
+image_data = data_url[data_index:]
+
+# Decode the base64-encoded data
+image_binary = base64.b64decode(image_data)
+
+# Specify the file path where you want to save the image
+file_path = "downloaded_image.jpg"
+
+# Write the decoded image data to a file
+with open(file_path, 'wb') as f:
+    f.write(image_binary)
+
+print("Image downloaded successfully!")
+
+
+
+
+
+
+this file is for download and save the recipes.csv
+
+import io
+import os
+import re
+import csv
+import time
+import base64
+import requests
+from PIL import Image
+from bs4 import BeautifulSoup
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
+# Function to read the CSV file and extract category and link
+def read_csv_file(file_path):
+    data = {}
+    with open(file_path, 'r', newline='') as csvfile:
+        csv_reader = csv.DictReader(csvfile)
+        for row in csv_reader:
+            meal_id = row['meal_id']
+            category = row['category']
+            link = row['links']
+            data[meal_id] = {'category': category, 'link': link}
+    return data
+
+# Example usage
+file_path = 'meal_info.csv'
+data = read_csv_file(file_path)
+# print(data)
+recipes = {}
+for key, value in data.items():
+    print("Key:", key, "Value:", value)
+    input = key
+
+# input = '2704'
+
+    url = data[input]['link']
+    response = requests.get(url)
+    soup = BeautifulSoup(response.content, 'html.parser')
+
+    # Find the <a> tag within the <div> tag with the specified class
+    image_tag = soup.find('div', class_='feature-image__image-container').find('a', class_='feature-image__image').find('img')
+
+    # Custom filename for the image
+    custom_filename = data[input]['category']+'.jpg'
+
+    if image_tag:
+        # Extract the URL of the image from the src attribute
+        image_url = image_tag['src']
+
+        # Send a GET request to download the image
+        image_response = requests.get(image_url)
+
+        # Check if the request was successful (status code 200)
+        if image_response.status_code == 200:
+            # Specify the directory where you want to save the image
+            directory = r'C:\Users\shaif\Desktop\django-fyp-food deman prediction\images'
+
+            # Create the directory if it doesn't exist
+            os.makedirs(directory, exist_ok=True)
+
+            # Specify the file path to save the image with the custom filename
+            filepath = os.path.join(directory, custom_filename)
+
+            # Save the image to the specified file path
+            with open(filepath, 'wb') as f:
+                f.write(image_response.content)
+
+            print("Image saved successfully with custom filename:", filepath)
+        else:
+            print("Failed to download the image.")
+    else:
+        print("Image not found in the HTML content.")
+
+
+
+    # Find all <li> elements within the provided section
+    li_elements = soup.select('section#content-recipe-1 li')
+
+    # Extract text from each <li> element
+    ingredients = []
+    for li in li_elements:
+        text = li.get_text(strip=True)
+        if 'and' in text:
+            ingredients.extend([part.strip() for part in text.split(' and ') if part.strip()])
+        elif ',' in text:
+            ingredients.extend([part.strip() for part in text.split(',') if part.strip()])
+        else:
+            ingredients.append(text)
+
+# Print the extracted ingredients
+    print(ingredients)
+    recipes[input] = ingredients
+
+    # Define the CSV file path
+    csv_file_path = 'recipes.csv'
+
+    # Write the data to the CSV file
+    with open(csv_file_path, 'w', newline='') as csvfile:
+        writer = csv.writer(csvfile)
+        
+        # Write header
+        writer.writerow(['recipe_name', 'ingredient'])
+        
+        # Write each ingredient along with its corresponding recipe name
+        for recipe_name, ingredients in recipes.items():
+            for ingredient in ingredients:
+                writer.writerow([recipe_name, ingredient])
+
+
+
+
+to display table:(products)
+
+
+# Start the Django shell
+python manage.py shell
+
+# Import the tabulate library and your Product model
+from tabulate import tabulate
+from home.models import Product
+
+# Retrieve all products from the Product table
+all_products = Product.objects.all()
+
+# Define the fields you want to display
+fields = ['id', 'mealid', 'name']
+
+# Extract data from objects
+data = [[getattr(product, field) for field in fields] for product in all_products]
+
+# Print the table
+print(tabulate(data, headers=fields, tablefmt="pretty"))
+
+
+
+
+to display the model(ingredents):
+
+# Start the Django shell
+python manage.py shell
+
+# Import the tabulate library and your Ingredient model
+from tabulate import tabulate
+from home.models import Ingredient
+
+# Retrieve all ingredients from the Ingredient table
+all_ingredients = Ingredient.objects.all()
+
+# Define the fields you want to display
+fields = ['id', 'name', 'cost']
+
+# Extract data from objects
+data = [[getattr(ingredient, field) for field in fields] for ingredient in all_ingredients]
+
+print(tabulate(data, headers=fields, tablefmt="grid"))
+
+
+
+
+
+
+
+
+for the join table:
+
+
+# Start the Django shell
+python manage.py shell
+
+# Import the tabulate library and your ProductIngredient model
+from tabulate import tabulate
+from home.models import ProductIngredient
+
+# Retrieve all entries from the ProductIngredient table
+all_product_ingredients = ProductIngredient.objects.all()
+
+# Define the fields you want to display
+fields = ['id', 'product', 'ingredient', 'quantity']
+
+# Extract data from objects
+data = [[getattr(entry, field) for field in fields] for entry in all_product_ingredients]
+
+# Print the table
+print(tabulate(data, headers=fields, tablefmt="pretty"))
+
+
+product table:
++----+--------+----------------------+
+| id | mealid |         name         |
++----+--------+----------------------+
+| 1  |  1885  |      Fishcurry       |
+| 2  |  1993  |       Omlette        |
+| 3  |  2539  |     Tomato Rice      |
+| 4  |  2139  |      Lemon Rice      |
+| 5  |  2631  |      Curd Rice       |
+| 6  |  1248  |    Vegetable Rice    |
+| 7  |  1778  |   Chicken Biriyani   |
+| 8  |  1062  |        Burger        |
+| 9  |  2707  |       Sandwich       |
+| 10 |  1207  |     French Fries     |
+| 11 |  1230  |     Sambar Rice      |
+| 12 |  2322  |         Dosa         |
+| 13 |  2290  |         Idly         |
+| 14 |  1727  |        Puttu         |
+| 15 |  1109  |      Chappathi       |
+| 16 |  2640  |      Idiyappam       |
+| 17 |  2306  |       Palappam       |
+| 18 |  2126  |    Chicken Curry     |
+| 19 |  2826  |      Beef Curry      |
+| 20 |  1754  |    Beef Biriyani     |
+| 21 |  1971  |    Prawn Biriyani    |
+| 22 |  1902  |    Fish Biriyani     |
+| 23 |  1311  |       Fish Fry       |
+| 24 |  1803  |      Chicken 65      |
+| 25 |  1558  |   Gobi Manchurian    |
+| 26 |  2581  |      Egg Curry       |
+| 27 |  1962  |       Egg Rice       |
+| 28 |  1445  |        Boori         |
+| 29 |  2444  |       Poratta        |
+| 30 |  2867  |     Masala Dosa      |
+| 31 |  1525  |     Apple Juice      |
+| 32 |  2704  |     Orange Juice     |
+| 33 |  2304  |   Watermelon Juice   |
+| 34 |  2577  |   Pineapple Juice    |
+| 35 |  1878  |  Thandoori Chicken   |
+| 36 |  1216  |     Prawn Curry      |
+| 37 |  1247  |      Prawn Fry       |
+| 38 |  1770  |   Alfaham Chicken    |
+| 39 |  1198  | Kuzhimanthi Biriyani |
+| 40 |  1438  | Mushroom Fried Rice  |
+| 41 |  2494  |  Chicken Fried Rice  |
+| 42 |  1847  |    Veg Fried Rice    |
+| 43 |  2760  |      Fig Juice       |
+| 44 |  2492  |     Mango Pickle     |
+| 45 |  1543  |      Podi Dosa       |
+| 46 |  2664  |   Gobi Fried Rice    |
+| 47 |  2569  |      Chola Puri      |
+| 48 |  2490  | Chocolate Milkshake  |
+| 49 |  1571  |      ABC Juice       |
+| 50 |  2956  |   Grilled Chicken    |
+| 51 |  2104  |        Jalebi        |
++----+--------+----------------------+
+
+ingredents:
++------+-------------+--------+
+|   id | name        |   cost |
++======+=============+========+
+|    1 | tomato      |    120 |
++------+-------------+--------+
+|    2 | garlic      |    230 |
++------+-------------+--------+
+|    3 | fish        |    300 |
++------+-------------+--------+
+|    4 | Chicken     |      1 |
++------+-------------+--------+
+|    5 | Rice-Flour  |     50 |
++------+-------------+--------+
+|    6 | Maida       |     30 |
++------+-------------+--------+
+|    7 | Lemon       |     60 |
++------+-------------+--------+
+|    8 | Curd        |     32 |
++------+-------------+--------+
+|    9 | Dhal        |     99 |
++------+-------------+--------+
+|   10 | Egg         |     10 |
++------+-------------+--------+
+|   11 | Cauliflower |     70 |
++------+-------------+--------+
+|   12 | Prawn       |    200 |
++------+-------------+--------+
+|   13 | Beef        |    150 |
++------+-------------+--------+
+|   14 | Potato      |     15 |
++------+-------------+--------+
+
+
+join table:
+
++----+----------------------+-------------+----------+
+| id |       product        | ingredient  | quantity |
++----+----------------------+-------------+----------+
+| 1  |      Fishcurry       |   tomato    |   2.0    |
+| 2  |      Fishcurry       |   garlic    |   2.0    |
+| 3  |      Fishcurry       |    fish     |   2.0    |
+| 4  |       Omlette        |     Egg     |   1.0    |
+| 5  |      Lemon Rice      |    Lemon    |   1.0    |
+| 6  |      Curd Rice       |    Curd     |   1.0    |
+| 7  |   Chicken Biriyani   |   Chicken   |   1.0    |
+| 8  |        Burger        |   Chicken   |   1.0    |
+| 9  |        Burger        |    Maida    |   1.0    |
+| 10 |       Sandwich       |    Maida    |   1.0    |
+| 11 |     French Fries     |   Potato    |   1.0    |
+| 12 |         Dosa         | Rice-Flour  |   1.0    |
+| 13 |         Idly         | Rice-Flour  |   1.0    |
+| 14 |        Puttu         | Rice-Flour  |   1.0    |
+| 15 |      Idiyappam       | Rice-Flour  |   1.0    |
+| 16 |       Palappam       | Rice-Flour  |   1.0    |
+| 17 |    Chicken Curry     |   Chicken   |   1.0    |
+| 18 |      Beef Curry      |    Beef     |   1.0    |
+| 19 |    Beef Biriyani     |    Beef     |   1.0    |
+| 20 |    Prawn Biriyani    |    Prawn    |   1.0    |
+| 21 |    Fish Biriyani     |    fish     |   1.0    |
+| 22 |       Fish Fry       |    fish     |   1.0    |
+| 23 |      Chicken 65      |   Chicken   |   1.0    |
+| 24 |   Gobi Manchurian    | Cauliflower |   1.0    |
+| 25 |      Egg Curry       |     Egg     |   2.0    |
+| 26 |       Egg Rice       |     Egg     |   3.0    |
+| 27 |       Poratta        |    Maida    |   1.0    |
+| 28 |     Masala Dosa      | Rice-Flour  |   1.0    |
+| 29 |  Thandoori Chicken   |   Chicken   |   1.0    |
+| 30 |     Prawn Curry      |    Prawn    |   1.0    |
+| 31 |      Prawn Fry       |    Prawn    |   1.0    |
+| 32 |   Alfaham Chicken    |   Chicken   |   1.0    |
+| 33 | Kuzhimanthi Biriyani |   Chicken   |   1.0    |
+| 34 |  Chicken Fried Rice  |   Chicken   |   1.0    |
+| 35 |      Podi Dosa       | Rice-Flour  |   1.0    |
+| 36 |   Grilled Chicken    |   Chicken   |   1.0    |
+| 37 |        Jalebi        |    Maida    |   1.0    |
+| 39 |     Sambar Rice      |   tomato    |   1.0    |
+| 40 |     Sambar Rice      |    Dhal     |   1.0    |
++----+----------------------+-------------+----------+
+
+
+from home.models import Product
+
+# Delete all records
+Product.objects.all().delete()
+
+
+to delete the contents of ingredents:
+
+# Import the Ingredient model
+from yourapp.models import Ingredient
+
+# Delete all records
+Ingredient.objects.all().delete()
+
+
+# Import the Ingredient model
+from home.models import ProductIngredient
+
+# Delete all records
+ProductIngredient.objects.all().delete()
+
+
+
+
+
+
+
+
+# ###
+# upgrade_product_ingredients sample
+# ###
+

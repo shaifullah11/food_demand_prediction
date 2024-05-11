@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load mathfilters %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingredients Needed</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        /* Add any custom styles here */
+        body {
+            background-image: url('https://wallpaperaccess.com/full/767352.jpg'); /* Replace 'path_to_your_image.jpg' with the path to your image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Ingredients Needed</h1>
+    <div class="row">
+        {% for prod in prod %}
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img class="card-img-top" src="{{prod.ingredient.image.url}}" alt="Ingredient Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Name: {{prod.ingredient.name.join(name.split('-'))}}</h5>
+                        <p class="card-text">Quantity: {{prod.quantity|mul:order}}</p>
+                        <p class="card-text">Cost: {{prod.ingredient.cost|mul:order}}</p>
+                        <!-- Add any additional information here -->
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    <a href="{% url 'cost' %}?cost={{cost}}" class="btn btn-primary">View Cost</a>
+</div>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
