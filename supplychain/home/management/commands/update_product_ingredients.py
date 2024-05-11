@@ -26,3 +26,4 @@ class Command(BaseCommand):
                     self.stdout.write(self.style.ERROR(f"Ingredient '{row['ingredient']}' does not exist."))
                 except Exception as e:
                     self.stdout.write(self.style.ERROR(f"An error occurred: {e}"))
+# python manage.py update_product_ingredients C:\Users\shaif\Desktop\food_demand_prediction\supplychain\output.csv

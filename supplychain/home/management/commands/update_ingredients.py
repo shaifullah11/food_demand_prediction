@@ -16,7 +16,7 @@ class Command(BaseCommand):
             for row in reader:
                 cost = row['cost']
                 name = row['name']
-                default_image_path = f"C:\\Users\\shaif\\Desktop\\supplychain\\supplychain\\media\\uploads\\ingredient\\{name}.jpg"
+                default_image_path = f"C:\\Users\\shaif\\Desktop\\food_demand_prediction\\supplychain\\media\\uploads\\ingredient\\{name}.jpg"
                 image_path = row.get('image', default_image_path)
 
                 # Check if the ingredient with the given name already exists
@@ -31,3 +31,4 @@ class Command(BaseCommand):
                 # ingredient.category = category
                 # ingredient.cuisine = cuisine
                 # ingredient.link = link
+# python manage.py update_ingredients C:\Users\shaif\Desktop\food_demand_prediction\supplychain\recipes.csv

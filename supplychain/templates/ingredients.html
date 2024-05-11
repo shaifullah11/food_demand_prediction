@@ -29,7 +29,7 @@
                 <div class="card">
                     <img class="card-img-top" src="{{prod.ingredient.image.url}}" alt="Ingredient Image">
                     <div class="card-body">
-                        <h5 class="card-title">Name: {{prod.ingredient.name.join(name.split('-'))}}</h5>
+                        <h5 class="card-title">Name: {{prod.ingredient.name}}</h5>
                         <p class="card-text">Quantity: {{prod.quantity|mul:order}}</p>
                         <p class="card-text">Cost: {{prod.ingredient.cost|mul:order}}</p>
                         <!-- Add any additional information here -->
