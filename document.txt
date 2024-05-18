@@ -704,7 +704,7 @@ Product.objects.all().delete()
 to delete the contents of ingredents:
 
 # Import the Ingredient model
-from yourapp.models import Ingredient
+from home.models import Ingredient
 
 # Delete all records
 Ingredient.objects.all().delete()

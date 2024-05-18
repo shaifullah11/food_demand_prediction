@@ -31,6 +31,7 @@ class Ingredient(models.Model):
 
     def __str__(self):
         return self.name
+    
 
 class Product(models.Model):
     mealid=models.PositiveIntegerField(default=0)
@@ -48,3 +49,6 @@ class ProductIngredient(models.Model):
 
     def __str__(self):
         return f"{self.product.name} - {self.ingredient.name}: {self.quantity}"
+    
+    def get_multiplied_weight(self, order_quantity):
+        return self.weight * order_quantity

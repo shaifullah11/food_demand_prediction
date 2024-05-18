@@ -75,8 +75,8 @@ couscous-and-lentil-salad,red-lentils,100 g
 couscous-and-lentil-salad,couscous,175 g
 couscous-and-lentil-salad,spring-onions,100 g
 couscous-and-lentil-salad,yogurt,300 g
-couscous-and-lentil-salad,white-wine-vinegar,51.21
-couscous-and-lentil-salad,olive-oil,51.21
+couscous-and-lentil-salad,white-wine-vinegar,51.21 ml
+couscous-and-lentil-salad,olive-oil,51.21 ml
 couscous-and-lentil-salad,salt,2 g
 couscous-and-lentil-salad,pepper,2g
 couscous-and-lentil-salad,cumin-powder,2g
@@ -86,7 +86,7 @@ deep-fried-rice-balls,garlic-clove,4g
 deep-fried-rice-balls,carrot,10g
 deep-fried-rice-balls,stick-stalk-celery,5g
 deep-fried-rice-balls,minced-meat,150 g
-deep-fried-rice-balls,tomato-puree,51.21
+deep-fried-rice-balls,tomato-puree,51.21 ml
 deep-fried-rice-balls,white-wine-dry,150 ml
 deep-fried-rice-balls,risotto-rice,250 g
 deep-fried-rice-balls,vegetable-broth,500 ml
@@ -104,10 +104,10 @@ cabbage-pasta,Fleckerl-pasta-(Austrian-pasta),250 g
 cabbage-pasta,vegetable-broth,350 ml
 cabbage-pasta,stalks-basil,15g
 cabbage-pasta,Creme-fraiche,150 g
-cabbage-pasta,eggs,2
+cabbage-pasta,eggs,2 eggs
 cabbage-pasta,pepper,2g
 cabbage-pasta,nutmeg,15g
-cabbage-pasta,breadcrumbs,51.21
+cabbage-pasta,breadcrumbs,51.21 g
 cabbage-pasta,butter,25 g
 chicken-pulao,chicken-without-skin,500 g
 chicken-pulao,onions,100g
@@ -137,17 +137,17 @@ green-bean-stew,vegetable-broth,500 ml
 green-bean-stew,salt,2 g
 green-bean-stew,pepper,2g
 green-bean-stew,sugar,10g
-green-bean-stew,white-wine-vinegar,51.21
-hainanese-chicken,pandan-leaf,3
+green-bean-stew,white-wine-vinegar,51.21 ml
+hainanese-chicken,pandan-leaf,3 g
 hainanese-chicken,chicken-legs,300 g
 hainanese-chicken,salt,1 g
-hainanese-chicken,soy-sauce,5.69
-hainanese-chicken,sesame-oil,5.69
-hainanese-chicken,dried-ginger,5
+hainanese-chicken,soy-sauce, 5.69 ml
+hainanese-chicken,sesame-oil,5.69 ml
+hainanese-chicken,dried-ginger,5 g
 hainanese-chicken,cloves-garlic,16g
 hainanese-chicken,raw-rice,375g
 hainanese-chicken,water,375g
-hainanese-chicken,cucumber,5
+hainanese-chicken,cucumber,5 g
 hainanese-chicken,spring-onions,5g
 hainanese-chicken,stalk-cilantro-coriander-leaves,5g
 paella,chicken-thighs-(skinless),600 g
@@ -170,7 +170,7 @@ lasagna,onion,50g
 lasagna,carrots,25g
 lasagna,sticks-celery-stalk,10g
 lasagna,mince-beef,750 g
-lasagna,tomato-paste,34.14
+lasagna,tomato-paste,34.14 g
 lasagna,diced-tomatoes-(canned),400 g
 lasagna,dry-red-wine,100 ml
 lasagna,dried-italian-herbs-or-AMC-Pure,5g
@@ -182,11 +182,11 @@ lasagna,milk,200 ml
 lasagna,nutmeg,10g
 lasagna,salt,2g
 lasagna,pepper,2g
-lasagna,sheets-of-lasagna,12
+lasagna,sheets-of-lasagna,12 sheet
 lasagna,grated-cheese,150 g
 indian-baked-potaoes,potatoes,400 g
 indian-baked-potaoes,garlic-clove,4g
-indian-baked-potaoes,olive-oil,17.07
+indian-baked-potaoes,olive-oil,17.07 ml
 indian-baked-potaoes,spicy-paprika-powder,2.84 g
 indian-baked-potaoes,curry-powder,2.84 g
 indian-baked-potaoes,salt,2g
@@ -269,14 +269,14 @@ scallopine-gorgonzola,salt,2g
 scallopine-gorgonzola,pepper,3g
 spaghetti-carbonara,marbled-bacon-(e.g.-pancetta),200 g
 spaghetti-carbonara,cloves-of-garlic,4g
-spaghetti-carbonara,fresh-eggs,4
+spaghetti-carbonara,fresh-eggs,4 eggs
 spaghetti-carbonara,parmesan-cheese,150 g
 spaghetti-carbonara,salt,2g
 spaghetti-carbonara,pepper,3g
 spaghetti-carbonara,stalks-flat-leaf-parsley,15g
 spaghetti-carbonara,spaghetti,500 g
 spaghetti-carbonara,salt,2g
-spaztle,eggs,4
+spaztle,eggs,4 eggs
 spaztle,flour,300 g
 spaztle,salt,2g
 spaztle,water,75 ml
@@ -285,10 +285,10 @@ lasooni-dal-tadka,red-gram-dal,250g
 lasooni-dal-tadka,water,500g
 lasooni-dal-tadka,turmeric-powder,5.69 g
 lasooni-dal-tadka,onion,50g
-lasooni-dal-tadka,oil,1 ts oil
+lasooni-dal-tadka,oil,1 ml
 lasooni-dal-tadka,mustard-seeds,2.84 g
 lasooni-dal-tadka,cumin-seeds,2.84 g
-lasooni-dal-tadka,garlic,2 ts garlic
+lasooni-dal-tadka,garlic,2 g
 lasooni-dal-tadka,stalk-curry-leaves,5g
 lasooni-dal-tadka,red-chillies,5g
 lasooni-dal-tadka,asafoetida,2g
@@ -298,16 +298,16 @@ lasooni-dal-tadka,salt,2g
 lasooni-dal-tadka,coriander-leaves,34.14g
 apple-tortilla,apples,150g
 apple-tortilla,oil,200 ml
-apple-tortilla,eggs-(medium-sized),4
+apple-tortilla,eggs-(medium-sized),4 eggs
 apple-tortilla,cinnamon,5g
 apple-tortilla,sugar,30g
-fried-eggs,eggs,2
+fried-eggs,eggs,2 eggs
 fried-eggs,low-fat-quark,5.69 g
 fried-eggs,butter,25g
 fried-eggs,salt,3g
 fried-eggs,pepper,3g
 crsipy-parmesan-asparagus,green-asparagus,500 g
-crsipy-parmesan-asparagus,eggs,2
+crsipy-parmesan-asparagus,eggs,2 eggs
 crsipy-parmesan-asparagus,twig-rosemary,5g
 crsipy-parmesan-asparagus,breadcrumbs,50 g
 crsipy-parmesan-asparagus,chopped-Parmesan-cheese,25 g
@@ -340,7 +340,7 @@ cod-fritters,milk,250 ml
 cod-fritters,butter,100 g
 cod-fritters,salt,3g
 cod-fritters,flour,125 g
-cod-fritters,eggs,6
+cod-fritters,eggs,6 eggs
 cod-fritters,clove-of-garlic,4g
 cod-fritters,stalks-parsley,20g
 cod-fritters,cod-fillet,400 g
@@ -358,7 +358,7 @@ sambar,cumin-seeds,2.84 g
 sambar,fenugreek-seeds,2.84 g
 sambar,stalk-curry-leaves,5g
 sambar,dry-red-chillies,10g
-sambar,oil,1 ts oil
+sambar,oil,1 ml
 sambar,mustard-seeds,5.69 g
 sambar,cumin-seeds,5.69 g
 sambar,black-gram,5.69 g
@@ -427,7 +427,7 @@ kebabs,halloumi,100 g
 kebabs,red-bell-pepper,50g
 apple-crepe,apple,60g
 apple-crepe,lemon-juice,34.14g
-apple-crepe,eggs,4
+apple-crepe,eggs,4 eggs
 apple-crepe,pinch-salt,2g
 apple-crepe,flour,150 g
 apple-crepe,baking-powder,2.84 g
@@ -464,34 +464,34 @@ parmesan-lollipops,chopped-Parmesan,45.52g
 crepes,wheat-flour,100 g
 crepes,pinch-salt,2g
 crepes,milk,200 ml
-crepes,eggs,2
+crepes,eggs,2 eggs
 dim-sum,spring-onion,5g
 dim-sum,cloves-of-garlic,8g
 dim-sum,ginger,30 g
 dim-sum,minced-meat-(beef-pork),250 g
 dim-sum,rice-wine-(or-dry-sherry),17.07 g
-dim-sum,sesame-oil,34.14
+dim-sum,sesame-oil,34.14 ml
 dim-sum,soy-sauce,102.42g
 dim-sum,sugar,11.38g
 dim-sum,salt,2.84 g
 dim-sum,pepper,3g
 dim-sum,olive-oil,51.21g
-dim-sum,fresh-wonton-skins,24
+dim-sum,fresh-wonton-skins,24 sheets
 dim-sum,flour,3g
 herb-omelette-fennel,toast-bread,25 g
 herb-omelette-fennel,parsley,30 g
 herb-omelette-fennel,chives,10g
 herb-omelette-fennel,sheep's-cheese,100 g
-herb-omelette-fennel,eggs,5
+herb-omelette-fennel,eggs,5 eggs
 herb-omelette-fennel,fennel,250 g
 herb-omelette-fennel,orange,25g
-herb-omelette-fennel,olive-oil,34.14
+herb-omelette-fennel,olive-oil,34.14 ml
 herb-omelette-fennel,salt,3g
 herb-omelette-fennel,pepper,3g
 fish-nuggets,small-onion,50g
-fish-nuggets,hard-boiled-egg,1
-fish-nuggets,pickles,2
-fish-nuggets,bunch-chives,120
+fish-nuggets,hard-boiled-egg,1 eggs
+fish-nuggets,pickles,2 g
+fish-nuggets,bunch-chives,120 g
 fish-nuggets,yogurt,150 g
 fish-nuggets,mustard,17.07 g
 fish-nuggets,salt,2g
@@ -500,15 +500,15 @@ fish-nuggets,mayonnaise,100 g
 fish-nuggets,fillet-of-fish-(e.g.-cod),600 g
 fish-nuggets,salt,2g
 fish-nuggets,pepper,3g
-fish-nuggets,eggs,3
+fish-nuggets,eggs,3 eggs
 fish-nuggets,flour,68.28g
 fish-nuggets,breadcrumbs,100 g
 fish-nuggets,oil,800 ml
-fish-sticks,frozen-fish-sticks,10
+fish-sticks,frozen-fish-sticks,10 g
 baklava,sugar,300 g
 baklava,water,200 ml
-baklava,stripes-of-untreated-orange-zest,2
-baklava,stripes-of-untreated-lemon-zest,2
+baklava,stripes-of-untreated-orange-zest,2 g
+baklava,stripes-of-untreated-lemon-zest,2 g
 baklava,stick-cinnamon,5g
 baklava,cloves,6g
 baklava,cardamom-pods,6g
@@ -517,20 +517,20 @@ baklava,rose-water,17.07 g
 baklava,lemon-juice,17.07 g
 baklava,mixed-nuts,200 g
 baklava,pistachios,50 g
-baklava,egg-whites,2
+baklava,egg-whites,2 eggs
 baklava,pinch-salt,2g
 baklava,sugar,17.07 g
 baklava,marzipan,75 g
 baklava,yufka-dough,250 g
 baklava,butter,80 g
-boiled-eggs,eggs,4
+boiled-eggs,eggs,4 eggs
 cheese-cake,flour,180 g
 cheese-cake,sugar,51.21g
 cheese-cake,butter,150 g
 cheese-cake,low-fat-quark,400 g
 cheese-cake,vanilla-sugar,8g
 cheese-cake,flour,34.14g
-cheese-cake,eggs,3
+cheese-cake,eggs,3 eggs
 cheese-cake,unwaxed-lemon-zest,5.69 g
 cheese-cake,mixed-berries,300 g
 cheese-cake,blackcurrant-or-raspberry-syrup,51.21g

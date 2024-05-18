@@ -168,8 +168,9 @@ def ingred(request):
     prod=ProductIngredient.objects.filter(product=p)
     k=ProductIngredient.objects.filter(product=p)
     for x in k:
-        cost=cost
-    return render(request,"ingredients.html",{"prod":prod,"order":order})
+        cost += x.ingredient.cost
+    cost = cost*order
+    return render(request,"ingredients.html",{"prod":prod,"order":order,"cost":cost})
 
 def main(request):
     return render(request,"main.html")
@@ -180,6 +181,7 @@ def logout(request):
 
 def cost(request):
     cost=request.GET.get("cost")
-    return render(request,"cost.html",{"cost":cost})
+    order=request.GET.get("order")
+    return render(request,"cost.html",{"cost":cost,"order":order})
 
 

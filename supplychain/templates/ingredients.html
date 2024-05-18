@@ -18,27 +18,38 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
+        .card-img-top{
+            width: 100%; /* Adjust this value to your desired width */
+        height: auto;
+        }
     </style>
 </head>
 <body>
 <div class="container">
-    <h1>Ingredients Needed</h1>
+    <h1 style="color: white;">Ingredients Needed</h1>
     <div class="row">
+        {% load my_filters %}
+
         {% for prod in prod %}
             <div class="col-md-4 mb-3">
                 <div class="card">
-                    <img class="card-img-top" src="{{prod.ingredient.image.url}}" alt="Ingredient Image">
+                    <img class="card-img-top" src="{{ prod.ingredient.image.url }}" alt="Ingredient Image">
                     <div class="card-body">
-                        <h5 class="card-title">Name: {{prod.ingredient.name}}</h5>
-                        <p class="card-text">Quantity: {{prod.quantity|mul:order}}</p>
-                        <p class="card-text">Cost: {{prod.ingredient.cost|mul:order}}</p>
+                        <h5 class="card-title">Name: {{ prod.ingredient.name }}</h5>
+                        <p class="card-text">Quantity: {{ prod.quantity|multiply_quantity:order }}</p>
+                        {% if prod.ingredient.name == 'salt' %}
+                            <p class="card-text">Cost: 20</p>
+                        {% else %}
+                            <p class="card-text">Cost: {{ prod.ingredient.cost|mul:order }}</p>
+                        {% endif %}
                         <!-- Add any additional information here -->
                     </div>
                 </div>
             </div>
         {% endfor %}
+        
     </div>
-    <a href="{% url 'cost' %}?cost={{cost}}" class="btn btn-primary">View Cost</a>
+    <a href="{% url 'cost' %}?cost={{cost}}&order={{order}}" class="btn btn-primary">View Cost</a>
 </div>
 <!-- Bootstrap JS -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
